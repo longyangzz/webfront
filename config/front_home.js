@@ -35,8 +35,8 @@ module.exports = {
         appSpacing: 8,
         list: [{
             id: 'app1',
-            name: '洪水分析',
-            title: '洪水分析',
+            name: '河南洪水分析',
+            title: '河南-洪水分析',
             icon: 'fab fa-amazon-pay',
             url: 'http://hsfx.bjdclw.com:8099/HenanFront/user/home',
             openMode: 'imbedded',
@@ -45,19 +45,27 @@ module.exports = {
             class: 'ui-state-highlight'
         }, {
             id: 'app2',
-            name: '河长制',
-            title: '河长制',
+            name: '陕西大屏',
+            title: '陕西大屏',
             img: '',
             icon: 'fas fa-dollar-sign',
             url: 'http://hsfx.bjdclw.com:8099/ShanxiFront/home/homePage',
             openMode: 'imbedded',
             class: 'ui-widget-content'
         }, {
-            id: '水库大坝',
-            name: '水库大坝',
-            title: '水库大坝',
+            id: 'app3',
+            name: '广西凤亭河水库大坝',
+            title: '广西凤亭河水库大坝',
             img: '/public/img/home-logo.png',
             url: 'http://hsfx.bjdclw.com:8062/GXDB/Home/index',
+            openMode: 'imbedded',
+            class: 'ui-widget-content'
+        },{
+            id: 'app4',
+            name: '海林洪水分析',
+            title: '海林洪水分析',
+            img: '/public/img/home-logo.png',
+            url: 'http://hsfx.bjdclw.com:8099/FloodAnalysis_HL/user/login',
             openMode: 'imbedded',
             class: 'ui-widget-content'
         }]
@@ -68,7 +76,7 @@ module.exports = {
         moduleSpacing: 6,
         list: [{
             id: 'mod-1',
-            name: '洪水分析',
+            name: '河南洪水分析',
             height: 360,
             width: 'calc(50% - 12px)',
             url: 'http://hsfx.bjdclw.com:8099/HenanFront/user/home'
@@ -76,14 +84,20 @@ module.exports = {
             height: 360,
             width: '50%',
             id: 'mod-2',
-            name: '河长制',
+            name: '陕西大屏',
             url: 'http://hsfx.bjdclw.com:8099/ShanxiFront/home/homePage'
         }, {
             id: 'mod-3',
-            name: '水库大坝',
+            name: '广西凤亭河水库大坝',
             height: 500,
-            url: 'http://hsfx.bjdclw.com:8062/GXDB/Home/index',
-            hiddenOnMobile: true
+            width: 'calc(50% - 12px)',
+            url: 'http://hsfx.bjdclw.com:8062/GXDB/Home/index'
+        }, {
+            id: 'mod-4',
+            name: '海林洪水分析',
+            height: 500,
+            width: '50%',
+            url: 'http://hsfx.bjdclw.com:8099/FloodAnalysis_HL/user/login'
         }]
     },
     bottom: {
