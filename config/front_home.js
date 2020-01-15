@@ -4,7 +4,7 @@ module.exports = {
         logoHeight: 36,
         logoUrl: '/public/img/home-logo.png',
         fontSize: 18,
-        title: 'XXXXX-111',
+        title: '智慧水利数据可视化平台',
         fontWeight: 400,
         themeSelector: true,
         class: 'ui-widget-content',
@@ -14,12 +14,12 @@ module.exports = {
         buttons: [{
             icon: 'far fa-bell',
             title: '通知',
-            actionUrl: 'http://app2.site.com/standalone/page/101'
+            actionUrl: 'http://www.bjdclw.com/'
         }, {
             icon: 'far fa-sun',
             title: '个人设置',
             hiddenOnMobile: true,
-            actionUrl: 'http://app1.site.com/standalone/page/101'
+            actionUrl: 'https://github.com/longyangzz/longyangzz.github.io'
         }]
     },
     apps: {
@@ -35,29 +35,29 @@ module.exports = {
         appSpacing: 8,
         list: [{
             id: 'app1',
-            name: '报销',
-            title: '无现金报销系统',
+            name: '洪水分析',
+            title: '洪水分析',
             icon: 'fab fa-amazon-pay',
-            url: 'http://app1.site.com',
+            url: 'http://hsfx.bjdclw.com:8099/HenanFront/user/home',
             openMode: 'imbedded',
             hiddenOnMobile: true,
             hiddenOnPC: false,
             class: 'ui-state-highlight'
         }, {
             id: 'app2',
-            name: '财务',
-            title: '财务管理系统',
+            name: '河长制',
+            title: '河长制',
             img: '',
             icon: 'fas fa-dollar-sign',
-            url: 'http://app2.site.com',
+            url: 'http://hsfx.bjdclw.com:8099/ShanxiFront/home/homePage',
             openMode: 'imbedded',
             class: 'ui-widget-content'
         }, {
-            id: 'app3',
-            name: 'xxx',
-            title: 'xxx / xxx / xxx',
+            id: '水库大坝',
+            name: '水库大坝',
+            title: '水库大坝',
             img: '/public/img/home-logo.png',
-            url: 'http://app3.site.com',
+            url: 'http://hsfx.bjdclw.com:8062/GXDB/Home/index',
             openMode: 'imbedded',
             class: 'ui-widget-content'
         }]
@@ -68,28 +68,28 @@ module.exports = {
         moduleSpacing: 6,
         list: [{
             id: 'mod-1',
-            name: '新闻公告',
+            name: '洪水分析',
             height: 360,
             width: 'calc(50% - 12px)',
-            url: 'http://app1.site.com/standalone/page/103'
+            url: 'http://hsfx.bjdclw.com:8099/HenanFront/user/home'
         }, {
             height: 360,
             width: '50%',
             id: 'mod-2',
-            name: '图片新闻',
-            url: 'http://app2.site.com/standalone/page/104'
+            name: '河长制',
+            url: 'http://hsfx.bjdclw.com:8099/ShanxiFront/home/homePage'
         }, {
             id: 'mod-3',
-            name: '我的日程',
+            name: '水库大坝',
             height: 500,
-            url: 'http://app3.site.com/standalone/page/102',
+            url: 'http://hsfx.bjdclw.com:8062/GXDB/Home/index',
             hiddenOnMobile: true
         }]
     },
     bottom: {
         height: 20,
         fontSize: 12,
-        text: '©2019 xxxx',
+        text: '©2019 鼎创智慧水利',
         textAlign: 'center'
     }
 };
