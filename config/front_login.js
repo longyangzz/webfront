@@ -1,6 +1,6 @@
 module.exports = {
     layoutStyle: 'left',
-    title: 'xxxxxx11',
+    title: '智慧水利云平台',
     titleFontSize: 26,
     titleFontWeight: 400,
     logoUrl: '/public/img/login-logo.png',
