@@ -137,7 +137,7 @@ app.use(function(req, res, next) {
 });
 
 app.use(function(err, req, res, next) {
-    logger.error(err);w
+    logger.error(err);
     var code = err.status || 500;
     res.status(code);
 
