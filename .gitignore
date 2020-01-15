@@ -13,3 +13,4 @@ console
 test
 assets/node_modules
 .idea/
+yarn.lock

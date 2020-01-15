@@ -50,13 +50,14 @@ for (var lang in i18nMap) {
           path: BUILD_PATH + '/pages/' + lang,
           filename: "[name].js"
         },
+        devtool: "cheap-module-eval-source-map",
         devServer: {
           contentBase: "./src"
         },
         resolve: {
           alias: {
             i18n: path.resolve(ROOT_PATH, 'src/pages/' + page + '/i18n')
-          } 
+          }
         },
         module: {
           loaders: [
@@ -64,9 +65,9 @@ for (var lang in i18nMap) {
               test: /\.(jpe?g|png|gif|svg)$/i,
               loader: 'url-loader'
             },
-            {    
-              test: /\.js$/,    
-              exclude: /node_modules/,    
+            {
+              test: /\.js$/,
+              exclude: /node_modules/,
               loaders: [
                 StringReplacePlugin.replace({
                   replacements: [
@@ -93,7 +94,7 @@ for (var lang in i18nMap) {
                   options: {
                     minimize: true
                   }
-                }, 
+                },
                 StringReplacePlugin.replace({
                   replacements: [
                       {
@@ -125,7 +126,7 @@ for (var lang in i18nMap) {
                               }
                             })(lang)
                         }
-                    ]}), 
+                    ]}),
                 'handlebars-loader'
               ]
             }
@@ -146,11 +147,11 @@ for (var lang in i18nMap) {
 ret[0].plugins.push(new BrowserSyncPlugin({
   host: '127.0.0.1',
   port: 8001,
-  server: { 
+  server: {
     baseDir: ['.'],
-    files: ['src/pages/**/*.js', 
-      'src/pages/**/*.less', 'src/components/**/*.js', 
-      'src/components/**/*.less'] 
+    files: ['src/pages/**/*.js',
+      'src/pages/**/*.less', 'src/components/**/*.js',
+      'src/components/**/*.less']
   }
 }));
 
