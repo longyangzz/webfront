@@ -37,7 +37,7 @@ module.exports = {
             id: 'app1',
             name: '河南洪水分析',
             title: '河南-洪水分析',
-            icon: 'fab fa-amazon-pay',
+            icon: 'fas fa-cloud-moon-rain',
             url: 'http://hsfx.bjdclw.com:8099/HenanFront/user/home',
             openMode: 'imbedded',
             hiddenOnMobile: true,
@@ -48,7 +48,7 @@ module.exports = {
             name: '陕西大屏',
             title: '陕西大屏',
             img: '',
-            icon: 'fas fa-dollar-sign',
+            icon: 'fas fa-desktop',
             url: 'http://hsfx.bjdclw.com:8099/ShanxiFront/home/homePage',
             openMode: 'imbedded',
             class: 'ui-widget-content'
